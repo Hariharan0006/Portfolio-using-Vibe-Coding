@@ -1,0 +1,188 @@
+/* Design System Variables */
+:root {
+    --primary-black: #000000;
+    --secondary-gray: #111827;
+    --primary-blue: #3b82f6;
+    --accent-red: #dc2626;
+    --accent-green: #16a34a;
+    --accent-yellow: #eab308;
+    --text-white: #ffffff;
+}
+
+/* Custom Animations */
+@keyframes fade-in {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slide-up {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes bounce-in {
+    0% { transform: scale(0.3); opacity: 0; }
+    50% { transform: scale(1.05); }
+    70% { transform: scale(0.9); }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+@keyframes card-appear {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+    animation: fade-in 1s ease-out;
+}
+
+.animate-slide-up {
+    animation: slide-up 0.8s ease-out;
+}
+
+.animate-bounce-in {
+    animation: bounce-in 0.6s ease-out;
+}
+
+.animate-card-appear {
+    animation: card-appear 0.6s ease-out;
+}
+
+.delay-100 { animation-delay: 0.1s; }
+.delay-200 { animation-delay: 0.2s; }
+
+/* Hover Effects and Transitions */
+.transition {
+    transition: all 0.3s ease;
+}
+
+.hover\:scale-105:hover {
+    transform: scale(1.05);
+}
+
+.hover\:-translate-y-2:hover {
+    transform: translateY(-0.5rem);
+}
+
+.hover\:shadow-xl:hover {
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+/* Mobile Menu Toggle */
+#menu-toggle:focus + #mobile-menu,
+#mobile-menu:hover {
+    display: flex;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .min-h-screen {
+        min-height: 100vh;
+    }
+    .text-4xl {
+        font-size: 2.25rem;
+    }
+    .text-3xl {
+        font-size: 1.875rem;
+    }
+    .grid-cols-1.md\:grid-cols-3 {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* Design System Variables */
+:root {
+    --primary-black: #000000;
+    --secondary-gray: #111827;
+    --primary-blue: #3b82f6;
+    --accent-red: #dc2626;
+    --accent-green: #16a34a;
+    --accent-yellow: #eab308;
+    --text-white: #ffffff;
+}
+
+/* Custom Animations */
+@keyframes fade-in {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slide-up {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes bounce-in {
+    0% { transform: scale(0.3); opacity: 0; }
+    50% { transform: scale(1.05); }
+    70% { transform: scale(0.9); }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+@keyframes card-appear {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+    animation: fade-in 1s ease-out;
+}
+
+.animate-slide-up {
+    animation: slide-up 0.8s ease-out;
+}
+
+.animate-bounce-in {
+    animation: bounce-in 0.6s ease-out;
+}
+
+.animate-card-appear {
+    animation: card-appear 0.6s ease-out;
+}
+
+.delay-100 { animation-delay: 0.1s; }
+.delay-200 { animation-delay: 0.2s; }
+.delay-300 { animation-delay: 0.3s; }
+
+/* Hover Effects and Transitions */
+.transition {
+    transition: all 0.3s ease;
+}
+
+.hover\:scale-105:hover {
+    transform: scale(1.05);
+}
+
+.hover\:-translate-y-2:hover {
+    transform: translateY(-0.5rem);
+}
+
+.hover\:shadow-xl:hover {
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+/* Mobile Menu Toggle */
+#menu-toggle:focus + #mobile-menu,
+#mobile-menu:hover {
+    display: flex;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .min-h-screen {
+        min-height: 100vh;
+    }
+    .text-4xl {
+        font-size: 2.25rem;
+    }
+    .text-3xl {
+        font-size: 1.875rem;
+    }
+    .grid-cols-1.md\:grid-cols-3 {
+        grid-template-columns: 1fr;
+    }
+    .grid-cols-1.md\:grid-cols-2.lg\:grid-cols-4 {
+        grid-template-columns: 1fr;
+    }
+}

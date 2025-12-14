@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Hariharan</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body class="bg-black text-white font-inter">
+    <!-- Navigation using Flexbox and Tailwind -->
+    <nav class="fixed top-0 w-full bg-gray-900 shadow-lg z-50">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <div class="text-xl font-bold text-blue-400">Hariharan</div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="text-white hover:text-blue-400 transition duration-300">Home</a>
+                    <a href="#about" class="text-white hover:text-blue-400 transition duration-300">About</a>
+                    <a href="#skills" class="text-white hover:text-blue-400 transition duration-300">Skills</a>
+                    <a href="#projects" class="text-white hover:text-blue-400 transition duration-300">Projects</a>
+                    <a href="#education" class="text-white hover:text-blue-400 transition duration-300">Education</a>
+                    <a href="#contact" class="text-white hover:text-blue-400 transition duration-300">Contact</a>
+                </div>
+                <button class="md:hidden text-white" id="menu-toggle">☰</button>
+            </div>
+            <div class="md:hidden hidden" id="mobile-menu">
+                <div class="flex flex-col space-y-2 py-4">
+                    <a href="#home" class="text-white hover:text-blue-400 transition duration-300">Home</a>
+                    <a href="#about" class="text-white hover:text-blue-400 transition duration-300">About</a>
+                    <a href="#skills" class="text-white hover:text-blue-400 transition duration-300">Skills</a>
+                    <a href="#projects" class="text-white hover:text-blue-400 transition duration-300">Projects</a>
+                    <a href="#education" class="text-white hover:text-blue-400 transition duration-300">Education</a>
+                    <a href="#contact" class="text-white hover:text-blue-400 transition duration-300">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero using Tailwind -->
+    <header id="home" class="min-h-screen flex flex-col justify-center items-center text-center bg-gradient-to-br from-gray-900 to-black py-20 px-4 pt-24">
+        <h1 class="text-4xl md:text-6xl font-poppins text-blue-400 mb-4 animate-fade-in">Hariharan</h1>
+        <p class="text-xl md:text-2xl mb-2 animate-slide-up">Data Science / Data Analyst Student</p>
+        <p class="text-lg mb-8 max-w-2xl animate-slide-up delay-200">Transforming raw data into actionable insights</p>
+        <a href="#projects" class="bg-blue-600 hover:bg-blue-500 text-white py-3 px-6 rounded-full transition duration-300 transform hover:scale-105 shadow-lg animate-bounce-in">View Projects</a>
+    </header>
+
+    <!-- Sections using Grid and Flexbox -->
+    <section id="about" class="py-16 px-4 bg-black">
+        <div class="container mx-auto max-w-6xl">
+            <h2 class="text-3xl font-poppins text-blue-600 mb-8 text-center animate-fade-in">About</h2>
+            <div class="text-center">
+                <p class="text-lg leading-relaxed animate-slide-up">Highly motivated Data Science enthusiast with hands-on experience in Python, SQL, and Power BI. Proficient in data cleaning, exploratory data analysis (EDA), and visualization using industry-standard tools. Passionate about transforming raw data into actionable insights and developing impactful analytical solutions.</p>
+                <p class="text-lg leading-relaxed mt-4 animate-slide-up delay-100">As a student, I am eager to apply my skills in real-world projects and contribute to data-driven decision-making processes. My goal is to leverage data to solve complex problems and drive innovation in various industries.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="py-16 px-4 bg-gray-900">
+        <div class="container mx-auto max-w-6xl">
+            <h2 class="text-3xl font-poppins text-blue-600 mb-8 text-center animate-fade-in">Skills</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-blue-800 text-white p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-2 animate-card-appear">
+                    <h5 class="font-bold mb-2">Data Science</h5>
+                    <p>Python, Machine Learning, Scikit-learn, Pandas</p>
+                </div>
+                <div class="bg-blue-700 text-white p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-2 animate-card-appear delay-100">
+                    <h5 class="font-bold mb-2">Data Analysis</h5>
+                    <p>EDA, NumPy, Statistics, Visualization</p>
+                </div>
+                <div class="bg-blue-600 text-white p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-2 animate-card-appear delay-200">
+                    <h5 class="font-bold mb-2">Business Analytics</h5>
+                    <p>Power BI, Dashboards, KPI Tracking, Insights</p>
+                </div>
+                <div class="bg-blue-500 text-white p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-2 animate-card-appear delay-300">
+                    <h5 class="font-bold mb-2">Tools</h5>
+                    <p>VS Code, GitHub, Excel, Jupyter Notebook</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="py-16 px-4 bg-black">
+        <div class="container mx-auto max-w-6xl">
+            <h2 class="text-3xl font-poppins text-blue-600 mb-8 text-center animate-fade-in">Projects</h2>
+            <div class="row justify-content-center g-4">
+                <div class="col-12 col-md-4">
+                    <div class="card bg-gray-800 text-white border-0 shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-2 animate-card-appear" style="backdrop-filter: blur(10px);">
+                        <div class="card-body">
+                            <h5 class="card-title text-blue-400">Customer Churn Prediction</h5>
+                            <p class="card-text">Developed a logistic regression model to identify churned customers. Performed preprocessing, feature selection, and model evaluation.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="card bg-gray-800 text-white border-0 shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-2 animate-card-appear delay-100" style="backdrop-filter: blur(10px);">
+                        <div class="card-body">
+                            <h5 class="card-title text-blue-400">Retail Sales Dashboard</h5>
+                            <p class="card-text">Built an interactive dashboard to track regional sales and profit trends. Enhanced business insights through KPI cards and drill-through filters.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="card bg-gray-800 text-white border-0 shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-2 animate-card-appear delay-200" style="backdrop-filter: blur(10px);">
+                        <div class="card-body">
+                            <h5 class="card-title text-blue-400">EDA on Titanic Dataset</h5>
+                            <p class="card-text">Conducted detailed EDA to identify key survival factors. Visualized data using Seaborn and Matplotlib for better interpretation.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="py-16 px-4 bg-gray-900">
+        <div class="container mx-auto max-w-6xl">
+            <h2 class="text-3xl font-poppins text-blue-600 mb-8 text-center animate-fade-in">Skills</h2>
+            <div class="row justify-content-center g-4">
+                <div class="col-12 col-md-3">
+                    <div class="card bg-gray-800 text-white border-0 shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-2 animate-card-appear text-center">
+                        <div class="card-body">
+                            <h5 class="card-title text-blue-400">Python</h5>
+                            <p class="card-text">Proficient in Python for data analysis, machine learning, and scripting. Libraries include Pandas, NumPy, Scikit-learn.</p>
+                            <a href="#" class="btn btn-outline-light">Link to course or bootcamp</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3">
+                    <div class="card bg-gray-800 text-white border-0 shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-2 animate-card-appear delay-100 text-center">
+                        <div class="card-body">
+                            <h5 class="card-title text-blue-400">Data Visualization</h5>
+                            <p class="card-text">Skilled in creating insightful visualizations using Matplotlib, Seaborn, and Power BI for data storytelling.</p>
+                            <a href="#" class="btn btn-outline-light">Link to course or bootcamp</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3">
+                    <div class="card bg-gray-800 text-white border-0 shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-2 animate-card-appear delay-200 text-center">
+                        <div class="card-body">
+                            <h5 class="card-title text-blue-400">SQL</h5>
+                            <p class="card-text">Experienced in SQL for querying databases, data manipulation, and generating reports for business insights.</p>
+                            <a href="#" class="btn btn-outline-light">Link to course or bootcamp</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3">
+                    <div class="card bg-gray-800 text-white border-0 shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-2 animate-card-appear delay-300 text-center">
+                        <div class="card-body">
+                            <h5 class="card-title text-blue-400">Data Storytelling</h5>
+                            <p class="card-text">Adept at communicating data insights effectively through narratives, dashboards, and presentations.</p>
+                            <a href="#" class="btn btn-outline-light">Link to course or bootcamp</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="education" class="py-16 px-4 bg-gradient-to-br from-gray-900 to-black">
+        <div class="container mx-auto max-w-4xl text-center">
+            <h2 class="text-3xl font-poppins text-blue-600 mb-8 animate-fade-in">Education</h2>
+            <div class="animate-slide-up">
+                <p class="text-lg mb-4 text-white">B.Sc. Computer Science – Government Arts & Science College, Pennagaram (2025) CGPA: 6.84</p>
+                <h3 class="text-xl text-blue-400 mb-4">Certifications & Experience</h3>
+                <ul class="list-none text-left mx-auto max-w-md space-y-4">
+                    <li class="bg-blue-800 p-4 rounded-lg shadow-lg text-white">
+                        <strong class="text-blue-300">Data Science Certification – 360DIGITMG</strong><br>
+                        Comprehensive course covering data preprocessing, machine learning, and project implementation.
+                    </li>
+                    <li class="bg-blue-700 p-4 rounded-lg shadow-lg text-white">
+                        <strong class="text-blue-300">Python, SQL, Power BI & EDA Course – 360DIGITMG</strong><br>
+                        Hands-on experience in Python programming, SQL queries, data visualization, and exploratory data analysis.
+                    </li>
+                    <li class="bg-blue-600 p-4 rounded-lg shadow-lg text-white">
+                        <strong class="text-blue-300">Data Analyst Scientist Business Analyst Certificate – 360DIGITMG</strong><br>
+                        Certificate available after completing the 6-8 month course.
+                    </li>
+                    <li class="bg-blue-500 p-4 rounded-lg shadow-lg text-white">
+                        <strong class="text-blue-300">Internship – 360DIGITMG, Bangalore</strong><br>
+                        Gained practical experience in data analysis and business analytics during the course.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-16 px-4 bg-black">
+        <div class="container mx-auto max-w-4xl text-center">
+            <h2 class="text-3xl font-poppins text-blue-600 mb-8 animate-fade-in">Contact Me</h2>
+            <div class="row justify-content-center g-4">
+                <div class="col-12 col-md-4">
+                    <div class="d-flex flex-column align-items-center animate-slide-up">
+                        <h5 class="text-white">LinkedIn</h5>
+                        <a href="https://linkedin.com/in/yourlinkedin" class="text-blue-400 hover:text-blue-300 transition">Connect with me</a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="d-flex flex-column align-items-center animate-slide-up delay-100">
+                        <h5 class="text-white">GitHub</h5>
+                        <a href="https://github.com/yourgithub" class="text-blue-400 hover:text-blue-300 transition">View my code</a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="d-flex flex-column align-items-center animate-slide-up delay-200">
+                        <h5 class="text-white">Email</h5>
+                        <a href="mailto:hari06haranhari@gmail.com" class="text-blue-400 hover:text-blue-300 transition">Send a message</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
